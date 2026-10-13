@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Language } from '@/lib/translations';
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
+import { Marquee } from '@/components/Marquee';
 import { AboutSection } from '@/components/AboutSection';
 import { ScamChecker } from '@/components/ScamChecker';
 import { LearningCenter } from '@/components/LearningCenter';
@@ -48,6 +49,8 @@ export default function Home() {
       />
 
       <Hero language={language} />
+
+      <Marquee />
 
       <AboutSection language={language} />
 
